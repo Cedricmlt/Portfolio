@@ -1,0 +1,609 @@
+/* ===== RESET & BASE ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(35, 34, 38);
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li {
+    color: white;
+}
+
+/* ===== NAVBAR ===== */
+#navBar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(45px);
+    background-color: #454648;
+}
+
+.navTotal {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: -9px -5px 5px 5px black;
+    padding: 10px 0;
+}
+
+#navGauche {
+    display: flex;
+    flex-basis: 50%;
+    margin-left: 50px;
+}
+
+#navDroite {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* ===== BOUTONS ===== */
+button {
+    background-color: #1f372f;
+    border-radius: 15px;
+    height: 35px;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #a67347;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#telechargerCV {
+    background-color: #780303;
+    border-radius: 15px;
+    height: 35px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #a67347;
+}
+
+#boutonRetour {
+    width: 160px;
+    height: 35px;
+    background-color: #780303;
+}
+
+.boutonRetour {
+    display: flex;
+    width: 100%;
+}
+
+/* ===== LOGOS SOCIAUX ===== */
+#github {
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    transition: transform 0.2s;
+}
+
+#github:hover {
+    transform: scale(1.1);
+}
+
+.linkedin {
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+/* ===== PAGE ACCUEIL - PROFIL ===== */
+.parentProfilPerso {
+    display: flex;
+    justify-content: center;
+    padding: 5% 20px 40px;
+}
+
+#profilPerso {
+    width: 90%;
+    border: 2px solid #a67347;
+    border-radius: 25px;
+    padding: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: #1f372f;
+    gap: 20px;
+}
+
+#aPropos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+}
+
+#prenomNom {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: clamp(1.8rem, 4vw, 4rem);
+}
+
+#metier {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+#para1 {
+    display: flex;
+}
+
+#paragraph1 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+#paragraph2 {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cadrePhotoProfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+#photo {
+    height: 250px;
+    width: 250px;
+    border: 2px solid #a67347;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* ===== PAGE MES PROJETS - CARDS ===== */
+.parentCard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 40px 20px;
+    gap: 35px;
+}
+
+#card {
+    width: clamp(280px, 45%, 600px);
+    border: 2px solid #a67347;
+    border-radius: 25px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #1f372f;
+    transition: transform 0.2s;
+}
+
+#card:hover {
+    transform: scale(1.03);
+}
+
+.card-img-top {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border: 2px solid #a67347;
+    border-radius: 10px;
+}
+
+.card-title {
+    font-family: sans-serif;
+    color: white;
+    margin: 10px 0;
+}
+
+.card-text {
+    font-family: sans-serif;
+    color: white;
+    line-height: 1.5;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.card-body1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-body2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.partieFigma,
+.partieAllocine {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#partieFigmaCard,
+#partieAllocineCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#boutonFigma,
+#boutonAllocine {
+    background-color: #030e25;
+    display: flex;
+    align-items: center;
+}
+
+/* ===== PAGES DETAIL PROJET ===== */
+.parentDescription {
+    display: flex;
+    padding: 40px 20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.descriptionFigma1,
+.descriptionFigma2,
+.descriptionAllocine1,
+.descriptionAllocine2 {
+    width: clamp(280px, 45%, 620px);
+    border: 2px solid #a67347;
+    border-radius: 25px;
+    padding: 25px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #1f372f;
+    gap: 15px;
+}
+
+.partieGauchedescription {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.partieFigma1,
+.partieAllocine1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.partieFigma2,
+.partieAllocine2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+video {
+    border: 2px solid #a67347;
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    border-radius: 10px;
+}
+
+.text-surlign {
+    text-decoration: underline;
+    color: white;
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+/* ===== PAGE MON CV ===== */
+.imageCV {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+#dimensionImage {
+    height: auto;
+    width: clamp(280px, 60vw, 900px);
+    border-radius: 10px;
+    display: block;
+}
+
+header img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ===========================
+   RESPONSIVE - TABLETTE
+   max-width: 1024px
+=========================== */
+@media (max-width: 1024px) {
+    #navGauche {
+        margin-left: 25px;
+    }
+
+    #profilPerso {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        padding: 25px;
+    }
+
+    #photo {
+        height: 200px;
+        width: 200px;
+    }
+
+    .parentCard {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #card {
+        width: 90%;
+        max-width: 600px;
+        height: auto;
+    }
+
+    .parentDescription {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .descriptionFigma1,
+    .descriptionFigma2,
+    .descriptionAllocine1,
+    .descriptionAllocine2 {
+        width: 90%;
+        max-width: 620px;
+        height: auto;
+    }
+}
+
+
+/* ===========================
+   RESPONSIVE - MOBILE
+   max-width: 768px
+=========================== */
+@media (max-width: 768px) {
+
+    /* Navbar burger-like : logo + icônes visibles, boutons cachés */
+    .navTotal {
+        flex-wrap: wrap;
+        padding: 10px 15px;
+        gap: 10px;
+    }
+
+    #navGauche {
+        flex-basis: auto;
+        margin-left: 10px;
+    }
+
+    #navGauche h1 {
+        font-size: 1.2rem;
+    }
+
+    #navDroite {
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        padding: 5px 0;
+    }
+
+    button {
+        width: 120px;
+        font-size: 0.85rem;
+    }
+
+    #telechargerCV {
+        width: 140px;
+    }
+
+    /* Profil */
+    .parentProfilPerso {
+        padding: 30px 15px;
+    }
+
+    #profilPerso {
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    #prenomNom {
+        font-size: 2rem;
+    }
+
+    #metier {
+        font-size: 1.2rem;
+    }
+
+    #photo {
+        height: 180px;
+        width: 180px;
+    }
+
+    /* Cards */
+    #card {
+        width: 95%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .card-img-top {
+        height: 160px;
+    }
+
+    /* Description projets */
+    .descriptionFigma1,
+    .descriptionFigma2,
+    .descriptionAllocine1,
+    .descriptionAllocine2 {
+        width: 95%;
+        height: auto;
+        padding: 20px;
+    }
+
+    /* CV */
+    #dimensionImage {
+        width: 90vw;
+        border-radius: 6px;
+    }
+}
+
+
+/* ===========================
+   RESPONSIVE - PETIT MOBILE
+   max-width: 480px
+=========================== */
+@media (max-width: 480px) {
+
+    #navGauche h1 {
+        font-size: 1rem;
+    }
+
+    #navDroite {
+        gap: 6px;
+    }
+
+    button {
+        width: 100px;
+        height: 32px;
+        font-size: 0.8rem;
+    }
+
+    #telechargerCV {
+        width: 130px;
+    }
+
+    #github,
+    .linkedin {
+        height: 28px;
+        width: 28px;
+    }
+
+    /* Profil */
+    #profilPerso {
+        width: 95%;
+        padding: 15px;
+    }
+
+    #prenomNom {
+        font-size: 1.6rem;
+    }
+
+    #metier {
+        font-size: 1rem;
+    }
+
+    #paragraph1,
+    #paragraph2 {
+        font-size: 0.9rem;
+    }
+
+    #photo {
+        height: 150px;
+        width: 150px;
+    }
+
+    /* Cards */
+    #card {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .card-img-top {
+        height: 130px;
+    }
+
+    #partieFigmaCard,
+    #partieAllocineCard {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Description projets */
+    .descriptionFigma1,
+    .descriptionFigma2,
+    .descriptionAllocine1,
+    .descriptionAllocine2 {
+        width: 95%;
+        padding: 15px;
+    }
+
+    video {
+        max-height: 200px;
+    }
+
+    /* CV */
+    #dimensionImage {
+        width: 95vw;
+        border-radius: 4px;
+    }
+
+    #boutonRetour {
+        width: 140px;
+        font-size: 0.85rem;
+    }
+}

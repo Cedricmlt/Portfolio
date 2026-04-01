@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Projet Figma</title>
+</head>
+
+<body>
+    <nav id="navBar">
+        <div class="navTotal">
+            <div id="navGauche">
+                <h1>PORTFOLIO</h1>
+            </div>
+            <div id="navDroite">
+                <button><a href="accueil.html" alt="Page d'accueil">Accueil</a></button>
+                <button><a href="mesProjets.html" alt="Page sur mes projets">Mes Projets</a></button>
+                <button><a href="./monCV.html" alt="Page de mon CV">Mon CV</a></button>
+                <a href="https://github.com/AnniCosplay" alt="Profil Github">
+                    <img id="github" src="./Assets/LogoGithub.png" alt="Profil de Github"></a>
+                <a href="https://www.linkedin.com/in/c%C3%A9dric-marlot-8134a6342/" alt="Profil Linkedin">
+                    <img src="./Assets/LogoLinkedin.png" alt="Profil Linkedin" class="linkedin"></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="parentDescription">
+        <div class="descriptionFigma1">
+            <img src="./Assets/Projet_figma.png" class="card-img-top" alt="maquette site avec voiture">
+            <div class="card-body1">
+                <div class="partieFigma1">
+                    <h2 class="card-title">Projet Figma</h2>
+                    <p class="card-text">Comparaison avec la maquette prototype.</p>
+                </div>
+
+                <div class="boutonRetour">
+                    <button id="boutonRetour"><a href="mesProjets.html" alt="Page MesProjets">Retour vers Mes
+                            Projets</a></button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="descriptionFigma2">
+
+
+
+            <video width="100%" controls autoplay muted loop>
+                <source src="./Assets/videoFigma.mp4" type="video/mp4">
+            </video>
+
+
+
+            <div class="card-body2">
+                <div class="partieFigma2">
+                    <h2 class="card-title">Maquette Prototype</h2>
+                </div>
+                <p class="card-text">Prototype de la maquette sur Figma. </br>
+                    </br>
+                <h2 class="text-surlign">Fonctionnalités :</h2>
+                <ul>
+                    <li>
+                        <p class="card-text">Apparition d'un overlay lors d'un click sur le bouton Connexion.</p>
+                    </li>
+                    <li>
+                        <p class="card-text">Scroll descendant vers les cartes lors d'un click sur le bouton rond.</p>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

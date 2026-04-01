@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Projet Allociné</title>
+</head>
+
+<body>
+    <nav id="navBar">
+        <div class="navTotal">
+            <div id="navGauche">
+                <h1>PORTFOLIO</h1>
+            </div>
+            <div id="navDroite">
+                <button><a href="accueil.html" alt="Page d'accueil">Accueil</a></button>
+                <button><a href="mesProjets.html" alt="Page sur mes projets">Mes Projets</a></button>
+                <button><a href="./monCV.html" alt="Page de mon CV">Mon CV</a></button>
+                <a href="https://github.com/AnniCosplay" alt="Profil Github">
+                    <img id="github" src="./Assets/LogoGithub.png" alt="Profil de Github"></a>
+                <a href="https://www.linkedin.com/in/c%C3%A9dric-marlot-8134a6342/" alt="Profil Linkedin">
+                    <img src="./Assets/LogoLinkedin.png" alt="Profil Linkedin" class="linkedin"></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="parentDescription">
+        <div class="partieGauchedescription">
+            <div class="descriptionAllocine1">
+                <img src="./Assets/Projet_allocine.png" class="card-img-top" alt="maquette projet allocine">
+                <div class="card-body">
+                    <div class="partieAllocine1">
+                        <h2 class="card-title">Projet Allocine</h2>
+
+                        <p class="card-text">Comparaison avec une vidéo courte de présentation.</p>
+                    </div>
+
+                </div>
+
+                <div class="boutonRetour">
+                    <button id="boutonRetour"><a href="mesProjets.html" alt="Page MesProjets">Retour vers Mes
+                            Projets</a></button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="descriptionAllocine2">
+
+
+
+            <video width="100%" controls autoplay muted loop>
+                <source src="./Assets/videoAllocine.mp4" type="video/mp4">
+            </video>
+
+
+
+
+            <div class="card-body">
+                <div class="partieAllocine2">
+                    <h2 class="card-title">Présentation site Allociné</h2>
+                </div>
+                <p class="card-text">Vidéo courte de présentation.</br>
+                    </br>
+                <div class="text-allocine">
+                    <h2 class="text-surlign">Fonctionnalités :</h2>
+                    <ul>
+                        <li>
+                            <p class="card-text">Navigation possible via la page des acteurs et leur détails.</p>
+                        </li>
+                        <li>
+                            <p class="card-text">Affichage des rôles des acteurs et des films de leur carrières.</p>
+                        </li>
+                        <li>
+                            <p class="card-text">Navigation possible via la page des films et leur détails.</p>
+                        </li>
+                        <li>
+                            <p class="card-text">Affichage la liste des acteurs jouant dans les films.</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
